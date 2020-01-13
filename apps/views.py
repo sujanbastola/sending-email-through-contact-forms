@@ -38,13 +38,13 @@ def go (request):
 
 
 
-def mail(request):
-    subject = "welcome to mail"
-    msg = "congratulation you got mail"
-    to = "bastolasujan09@gmail.com"
-    res = send_mail(subject,msg,settings.EMAIL_HOST_USER,[to])
-    if(res == 1):
-        msg = "mail sccessfuly"
-    else:
-        msg = "mail could not sent"
-    return HttpResponse(msg)
+# def mail(request):
+#     subject = "welcome to mail"
+#     msg = "congratulation you got mail"
+#     to = "bastolasujan09@gmail.com"
+#     res = send_mail(subject,msg,settings.EMAIL_HOST_USER,[to])
+#     if(res == 1):
+#         msg = "mail sccessfuly"
+#     else:
+#         msg = "mail could not sent"
+#     return HttpResponse(msg)
