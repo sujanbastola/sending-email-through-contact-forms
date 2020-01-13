@@ -1,0 +1,91 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+<head"{{LANGUAGE_CODE}}"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cc.css' %}">
+    <!-- Bootstrap CSS --!>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+ </head>
+ <body>
+
+<h3 class="hhhh"><marquee>---Contact to Wakkanai Rental---</marquee></h3>
+
+    <div class="container">
+          <form method="POST" action="">
+              {% csrf_token %}
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">Email Address</label>
+            <input type="email" id="lname" name="email" placeholder="example@email.com">
+            <label for="subject">message</label>
+            <textarea id="subject" name="subject" placeholder="Write your message." style="height:200px"></textarea>
+
+            <input type="submit" value="Send">
+          </form>
+    </div>
+               <div class="map">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.2230816335145!2d141.71537087552906!3d45.38467057979883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6215a5a47cb6f338!2sWakkanai%20Hokusei%20Gakuen%20University!5e0!3m2!1sen!2sjp!4v1574063701381!5m2!1sen!2sjp" width="480" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+        <footer class="footer-distributed">
+        <div class="footer-left">
+      <img src="{% static 'static/ghar.jpg' %}"/>
+            <h3>Wakkanai<span>Rental</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Blog</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+            <p class="footer-company-name">© Wakkanai RentalPvt. Ltd.</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>稚内北星学園大学,
+                     若葉台−３０３０３</span>
+                    Wakkanai-Hokkaido</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>080 1887 5033</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@eduonix.com">rentwakkanai@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                We providing the apartment for wakkanai public also we are tyring to do this service all around the Hokkaido</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
