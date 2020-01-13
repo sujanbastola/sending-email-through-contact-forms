@@ -1,3 +1,5 @@
+templates harlai apps ko vitra rakhni hai galti vayo upload grda
+
 # sending-email-through-contact-forms
 [[[
 (#this is the comment in django so you dont need to write)
