@@ -140,12 +140,12 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'first/assets')
 
-SENDGRID_API_KEY = os.getenv('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')
+SENDGRID_API_KEY = os.getenv('API key from sendgrid')
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'sujan07'
-EMAIL_HOST_PASSWORD = 'ronaldosujan07'
+EMAIL_HOST_USER = 'username of sendgrid'
+EMAIL_HOST_PASSWORD = 'sendgridpassword'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'bastolasujan202@gmail.com'
+DEFAULT_FROM_EMAIL = 'example202@gmail.com'#sengride gamil id
 ACCOUNT_EMAIL_SUBJECT_PREFIX = 'we got your message thanks for believing us'
 #EMAIL_BACKEND = 'django.core.mail.backend.smtp.EmailBackend'
